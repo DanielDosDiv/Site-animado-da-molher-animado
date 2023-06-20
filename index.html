@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Friday</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&family=Poppins:wght@500;600;700&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+.conteiner h1{
+    
+font-style: normal;
+font-weight: 700;
+font-size: 80px;
+color: #000000;
+width: 755px;
+margin-bottom: 2%;
+
+}
+.conteiner p{
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+color: #000000;
+width: 382px;
+}
+.conteiner a{
+    text-decoration: none;
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+color: #000000;
+}
+
+.conteiner{
+    margin-top: 14%;
+    margin-left: 3%;
+    z-index: 3;
+    position: absolute;
+    
+    
+    animation:h1pdecendocomopacidade;
+    animation-duration: 1s;
+}
+.texto h1 p {
+    position: relative;
+    margin-top: 50%;    
+}
+@keyframes h1pdecendocomopacidade {
+    from{
+        margin-left: -15%;
+        opacity: 0;
+
+    }
+    to{
+        margin-left: 3%;
+        opacity: 1;
+    }
+}
+
+.bkg-animado img{
+width: 80%;
+position: absolute;
+right: 0;
+bottom: 0;
+animation: 1s animacaoMulher;
+
+}
+@keyframes animacaoMulher{
+    from{
+        right: -25%;
+        position: absolute;
+    }
+    to{
+        position: absolute;
+    right: 0%;    
+    }
+    
+}
+body{
+    background-image: url("/img/fundo.png");
+    background-repeat: no-repeat;
+    
+    overflow: hidden;
+    
+}
+.bkg-animado{
+    display: flex;
+}
+
+.parteBranca{
+    width: 100vw;
+    height: 150vh;
+    background-color: white;
+    position: absolute;
+    /* top: 0; */
+    z-index: 1;
+    left: -32%;
+    transform: rotate(75deg);
+    animation: animacaoParteBranca;
+    animation-duration: 1s;
+}
+@keyframes animacaoParteBranca {
+    from{
+        left: -100%;
+
+    }
+    to{
+        left: -32%;
+    }
+}
+.btn{
+    width: 160px;
+height: 45px;
+border-radius: 15px;
+background: #000000;
+margin-top: 50px;
+transition: 500ms;
+}
+.btn a{
+    font-weight: 400;
+font-size: 16px;
+width: inherit;
+height: inherit;
+align-items: center;
+display: flex;
+justify-content: center;
+color: #FFFFFF;
+}
+.btn:hover{
+    transform: scale(1.05)
+}
+    </style>
+</head>
+<body>
+    <div class="bkg-animado">
+        <img src="img/Mulher png.png" alt="">
+        <div class="parteBranca"></div>
+    </div>
+    <div class="conteiner">
+        <div class="textos">
+            <h1>Black Friday discounts are here</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="btn">
+            <a href="#">Read More</a>
+        </div>
+    </div>
+    <script src="js/js.js"></script>
+</body>
+</html>
